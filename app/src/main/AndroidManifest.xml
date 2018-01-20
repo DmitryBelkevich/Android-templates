@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- parent-activity -->
         <activity
             android:name=".Activity1"
             android:label="@string/title_activity1">
@@ -20,13 +21,15 @@
             </intent-filter>
         </activity>
 
+        <!-- child-activity -->
         <activity
             android:name=".Activity2"
-            android:label="@string/title_activity2"></activity>
-
-        <activity
-            android:name=".Activity3"
-            android:label="@string/title_activity3"></activity>
+            android:label="@string/title_activity2"
+            android:parentActivityName=".Activity1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity1" />
+        </activity>
 
     </application>
 
