@@ -1,10 +1,10 @@
 package com.hard;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Activity1 extends AppCompatActivity {
     private TextView textView;
@@ -19,8 +19,8 @@ public class Activity1 extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity1.this, Activity2.class);
-                startActivity(intent);
+                Toast toast = Toast.makeText(Activity1.this, "Hello World", Toast.LENGTH_LONG);
+                toast.show();
             }
         });
     }
