@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
 
+    <!-- activities -->
     <string name="title_activity1">Activity1</string>
+
+    <!-- menu -->
+    <string name="action_item1">Item1</string>
+    <string name="action_item2">Item2</string>
+    <string name="action_item3">Item3</string>
 </resources>
