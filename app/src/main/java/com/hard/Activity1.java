@@ -28,7 +28,9 @@ public class Activity1 extends AppCompatActivity {
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo menuInfo) {
-        switch (view.getId()) {
+        int id = view.getId();
+
+        switch (id) {
             case R.id.textView1:
                 menu.add(0, Id.itemId1, 0, "Item1");
                 menu.add(0, Id.itemId2, 0, "Item2");
